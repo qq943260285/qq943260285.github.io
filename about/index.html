@@ -251,18 +251,10 @@
     </div>
 </div>
 
+
 <script>
-// Dynamically switch banner pictures every day.
-$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
-</script>
-<script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?2490853d36a8f0a2e4c0ef097cdf36e2";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
+    // Dynamically switch banner pictures every day.
+    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
 
 
@@ -490,7 +482,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"前端","value":1},{"name":"Java","value":2},{"name":"Markdown","value":1},{"name":"SpringCloud","value":1},{"name":"集合","value":1}],
+                data: [{"name":"Markdown","value":1},{"name":"前端","value":1},{"name":"Java","value":2},{"name":"SpringCloud","value":1},{"name":"集合","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -773,6 +765,15 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 </footer>
 
 <div class="progress-bar"></div>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?2490853d36a8f0a2e4c0ef097cdf36e2";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
 
 
 <!-- 搜索遮罩框 -->
