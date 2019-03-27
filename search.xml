@@ -4,6 +4,87 @@
   
     
     <entry>
+      <title>一、SpringCloud介绍</title>
+      <link href="/2019/02/07/springcloud-xi-lie/1.springcloud-jie-shao/"/>
+      <url>/2019/02/07/springcloud-xi-lie/1.springcloud-jie-shao/</url>
+      
+        <content type="html"><![CDATA[<h2 id="占位"><a href="#占位" class="headerlink" title="占位"></a>占位</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> SpringCloud </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 介绍 </tag>
+            
+            <tag> SpringCloud </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>一、RabbitMQ介绍</title>
+      <link href="/2019/02/06/rabbitmq-xi-lie/1.rabbitmq-jie-shao/"/>
+      <url>/2019/02/06/rabbitmq-xi-lie/1.rabbitmq-jie-shao/</url>
+      
+        <content type="html"><![CDATA[<h2 id="占位"><a href="#占位" class="headerlink" title="占位"></a>占位</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> RabbitMQ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> RabbitMQ </tag>
+            
+            <tag> 介绍 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>一、Redis介绍</title>
+      <link href="/2019/02/05/redis-xi-lie/1.redis-jie-shao/"/>
+      <url>/2019/02/05/redis-xi-lie/1.redis-jie-shao/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Redis </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 介绍 </tag>
+            
+            <tag> Redis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>一、SpringBoot介绍</title>
       <link href="/2019/02/03/springboot-xi-lie/1.springboot-jie-shao/"/>
       <url>/2019/02/03/springboot-xi-lie/1.springboot-jie-shao/</url>
@@ -19,6 +100,8 @@
       
       
         <tags>
+            
+            <tag> 介绍 </tag>
             
             <tag> Spring Boot </tag>
             
@@ -71,6 +154,8 @@
       
       
         <tags>
+            
+            <tag> 介绍 </tag>
             
             <tag> Servlet </tag>
             
