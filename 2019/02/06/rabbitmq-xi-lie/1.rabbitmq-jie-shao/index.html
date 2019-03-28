@@ -5,7 +5,7 @@
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     <meta name="keywords" content="一、RabbitMQ介绍, 小宇专属，学习，笔记，开发，全栈">
-    <meta name="description" content="占位">
+    <meta name="description" content="RabbitMQ介绍RabbitMQ（Rabbit Message Queue）的简写，但不能仅仅理解其为消息队列，消息代理更合适。RabbitMQ 是一个由 Erlang 语言开发的AMQP（Advanced Message Queuin">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -355,12 +355,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/RabbitMQ/" target="_blank">
-                                <span class="chip bg-color">RabbitMQ</span>
-                            </a>
-                        
                             <a href="/tags/介绍/" target="_blank">
                                 <span class="chip bg-color">介绍</span>
+                            </a>
+                        
+                            <a href="/tags/RabbitMQ/" target="_blank">
+                                <span class="chip bg-color">RabbitMQ</span>
                             </a>
                         
                     </div>
@@ -390,14 +390,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        2
+                        647
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        2 分
                     </div>
                     
                 
@@ -413,7 +413,18 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="占位"><a href="#占位" class="headerlink" title="占位"></a>占位</h2>
+                <h2 id="RabbitMQ介绍"><a href="#RabbitMQ介绍" class="headerlink" title="RabbitMQ介绍"></a>RabbitMQ介绍</h2><p>RabbitMQ（Rabbit Message Queue）的简写，但不能仅仅理解其为消息队列，消息代理更合适。RabbitMQ 是一个由 <strong>Erlang</strong> 语言开发的AMQP（Advanced Message Queuing Protocol）（高级消息队列协议）的开源实现。</p>
+<p>支持多种客户端，如：<code>Python、Ruby、.NET、Java、JMS、C、PHP、ActionScript、XMPP、STOMP等，支持AJAX</code>,<strong>最重要的是也支持OC和swift</strong>。用于在分布式系统中存储转发消息，在易用性、扩展性、高可用性等方面表现不错。</p>
+<p>消息队列中间件是分布式系统中重要的组件，主要解决<strong>应用耦合</strong>，<strong>异步消息</strong>，<strong>流量削锋</strong>等问题。实现<strong>高性能</strong>，<strong>高可用</strong>，<strong>可伸缩</strong>和<strong>最终一致性</strong>架构。是大型分布式系统不可缺少的中间件。</p>
+<p>RabbitMQ提供了可靠的消息机制、跟踪机制和灵活的消息路由，支持消息集群和分布式部署。适用于排队算法、秒杀活动、消息分发、异步处理、数据同步、处理耗时任务、CQRS等应用场景。</p>
+<p>消息系统允许软件应用相互连接和扩展．这些应用可以相互链接起来组成一个更大的应用，或者将用户设备和数据进行连接．消息系统通过将消息的发送和接收分离来实现应用程序的异步和解偶。</p>
+<p>RabbitMQ是一个消息代理，一个消息系统的媒介。它可以为你的应用提供一个通用的消息发送和接收平台，并且保证消息再传输过程中的安全。</p>
+<p>RabbitMQ是一个消息代理。它的核心原理非常简单：接收和发送消息。你可以把它想像成一个邮局：你把信件放入邮箱，邮递员就会把信件投递到你的收件人处。在这个比喻中，RabbitMQ 就扮演着邮箱、邮局以及邮递员的角色。</p>
+<p>RabbitMQ和邮局的主要区别是，它不是用来处理纸张的，它是用来接收、存储和发送消息（message）这种二进制数据的。</p>
+<p>RabbitMQ的官网是<a href="http://www.rabbitmq.com" target="_blank" rel="noopener">http://www.rabbitmq.com</a></p>
+<h2 id="AMQP协议"><a href="#AMQP协议" class="headerlink" title="AMQP协议"></a>AMQP协议</h2><p><strong>AMQP</strong>，即<code>Advanced Message Queuing Protocol</code>，高级消息队列协议，是应用层协议的一个开放标准，为面向消息的中间件设计。消息中间件主要用于组件之间的解耦，消息的发送者无需知道消息使用者的存在，反之亦然。</p>
+<p>AMQP的主要特征是面向消息、队列、路由（包括点对点和发布/订阅）、可靠性、安全。</p>
+
             </div>
             <hr>
 
@@ -614,7 +625,7 @@
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">占位</div>
+                    <div class="summary">SpringCloud介绍Spring Cloud为开发人员提供了快速构建分布式系统中一些常见模式的工具（例如配置管理，服务发现，断路器，智能路由，微代理，控制总线，一次性令牌，全局锁定，领导选举，分布式会话，集群状态）。分布式系统间的协作</div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-07
@@ -623,7 +634,11 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/SpringCloud/" class="post-category" target="_blank">
+                            <a href="/categories/Java/" class="post-category" target="_blank">
+                                    Java
+                                </a>
+                            
+                            <a href="/categories/Java/SpringCloud/" class="post-category" target="_blank">
                                     SpringCloud
                                 </a>
                             
@@ -634,12 +649,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/介绍/" target="_blank">
-                        <span class="chip bg-color">介绍</span>
-                    </a>
-                    
                     <a href="/tags/SpringCloud/" target="_blank">
                         <span class="chip bg-color">SpringCloud</span>
+                    </a>
+                    
+                    <a href="/tags/Java/" target="_blank">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                    <a href="/tags/介绍/" target="_blank">
+                        <span class="chip bg-color">介绍</span>
                     </a>
                     
                 </div>
@@ -796,7 +815,7 @@
             本站文章由个人原创与网络收集组成.
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">2.4k</span>
+                <span class="white-color">4.2k</span>
             
 
             
