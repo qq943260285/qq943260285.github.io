@@ -4,8 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="一、Servlet介绍, 小宇专属，学习，笔记，开发，全栈">
-    <meta name="description" content="Servlet 简介Servlet 是一些遵从Java Servlet API的Java类，这些Java类可以响应请求。尽管Servlet可以响应任意类型的请求，但是它们使用最广泛的是响应web方面的请求。 Servlet必须部署在Java">
+    <meta name="keywords" content="一、RabbitMQ介绍, 小宇专属，学习，笔记，开发，全栈">
+    <meta name="description" content="RabbitMQ介绍RabbitMQ（Rabbit Message Queue）的简写，但不能仅仅理解其为消息队列，消息代理更合适。RabbitMQ 是一个由 Erlang 语言开发的AMQP（Advanced Message Queuin">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>一、Servlet介绍 | 小宇专属</title>
+    <title>一、RabbitMQ介绍 | 小宇专属</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -236,13 +236,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        一、Servlet介绍
+                        一、RabbitMQ介绍
                     </div>
                 </div>
             </div>
@@ -359,16 +359,8 @@
                                 <span class="chip bg-color">介绍</span>
                             </a>
                         
-                            <a href="/tags/Servlet/" target="_blank">
-                                <span class="chip bg-color">Servlet</span>
-                            </a>
-                        
-                            <a href="/tags/Java基础/" target="_blank">
-                                <span class="chip bg-color">Java基础</span>
-                            </a>
-                        
-                            <a href="/tags/Java/" target="_blank">
-                                <span class="chip bg-color">Java</span>
+                            <a href="/tags/RabbitMQ/" target="_blank">
+                                <span class="chip bg-color">RabbitMQ</span>
                             </a>
                         
                     </div>
@@ -379,12 +371,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Servlet/" class="post-category" target="_blank">
-                                Servlet
-                            </a>
-                        
-                            <a href="/categories/Servlet/Java/" class="post-category" target="_blank">
-                                Java
+                            <a href="/categories/RabbitMQ/" class="post-category" target="_blank">
+                                RabbitMQ
                             </a>
                         
                     </div>
@@ -395,21 +383,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-02-01
+                    2019-02-06
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        907
+                        647
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        3 分
+                        2 分
                     </div>
                     
                 
@@ -425,31 +413,17 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Servlet-简介"><a href="#Servlet-简介" class="headerlink" title="Servlet 简介"></a>Servlet 简介</h1><p>Servlet 是一些遵从Java Servlet API的Java类，这些Java类可以响应请求。尽管Servlet可以响应任意类型的请求，但是它们使用最广泛的是响应web方面的请求。 Servlet必须部署在Java servlet容器才能使用。虽然很多开发者都使用Java Server Pages（JSP）和Java Server Faces（JSF）等Servlet框架，但是这些技术都要在幕后通过Servlet容器把页面编译为Java Servlet。也就是说，了解<strong>Java Servlet技术的基础知识</strong>对任何Java web开发者来说是很有用的。</p>
-<p>Java Servlet 是运行在 Web 服务器或应用服务器上的程序，它是作为来自 Web 浏览器或其他 HTTP 客户端的请求和 HTTP 服务器上的数据库或应用程序之间的中间层。</p>
-<p>使用 Servlet，您可以收集来自网页表单的用户输入，呈现来自数据库或者其他源的记录，还可以动态创建网页。</p>
-<p>Java Servlet 通常情况下与使用 CGI（Common Gateway Interface，公共网关接口）实现的程序可以达到异曲同工的效果。但是相比于 CGI，Servlet 有以下几点优势：</p>
-<ul>
-<li>性能明显更好。</li>
-<li>Servlet 在 Web 服务器的地址空间内执行。这样它就没有必要再创建一个单独的进程来处理每个客户端请求。</li>
-<li>Servlet 是独立于平台的，因为它们是用 Java 编写的。</li>
-<li>服务器上的 Java 安全管理器执行了一系列限制，以保护服务器计算机上的资源。因此，Servlet 是可信的。</li>
-<li>Java 类库的全部功能对 Servlet 来说都是可用的。它可以通过 sockets 和 RMI 机制与 applets、数据库或其他软件进行交互。</li>
-</ul>
-<h2 id="Servlet-架构"><a href="#Servlet-架构" class="headerlink" title="Servlet 架构"></a>Servlet 架构</h2><p>下图显示了 Servlet 在 Web 应用程序中的位置。</p>
-<p><img src="/2019/02/01/Servlet系列/1.Servlet介绍/assets/servlet-arch.jpg" alt="Servlet 架构"></p>
-<h2 id="Servlet-任务"><a href="#Servlet-任务" class="headerlink" title="Servlet 任务"></a>Servlet 任务</h2><p>Servlet 执行以下主要任务：</p>
-<ul>
-<li>读取客户端（浏览器）发送的显式的数据。这包括网页上的 HTML 表单，或者也可以是来自 applet 或自定义的 HTTP 客户端程序的表单。</li>
-<li>读取客户端（浏览器）发送的隐式的 HTTP 请求数据。这包括 cookies、媒体类型和浏览器能理解的压缩格式等等。</li>
-<li>处理数据并生成结果。这个过程可能需要访问数据库，执行 RMI 或 CORBA 调用，调用 Web 服务，或者直接计算得出对应的响应。</li>
-<li>发送显式的数据（即文档）到客户端（浏览器）。该文档的格式可以是多种多样的，包括文本文件（HTML 或 XML）、二进制文件（GIF 图像）、Excel 等。</li>
-<li>发送隐式的 HTTP 响应到客户端（浏览器）。这包括告诉浏览器或其他客户端被返回的文档类型（例如 HTML），设置 cookies 和缓存参数，以及其他类似的任务。</li>
-</ul>
-<h2 id="Servlet-包"><a href="#Servlet-包" class="headerlink" title="Servlet 包"></a>Servlet 包</h2><p>Java Servlet 是运行在带有支持 Java Servlet 规范的解释器的 web 服务器上的 Java 类。</p>
-<p>Servlet 可以使用 <strong>javax.servlet</strong> 和 <strong>javax.servlet.http</strong> 包创建，它是 Java 企业版的标准组成部分，Java 企业版是支持大型开发项目的 Java 类库的扩展版本。</p>
-<p>这些类实现 Java Servlet 和 JSP 规范。在写本教程的时候，二者相应的版本分别是 Java Servlet 2.5 和 JSP 2.1。</p>
-<p>Java Servlet 就像任何其他的 Java 类一样已经被创建和编译。在您安装 Servlet 包并把它们添加到您的计算机上的 Classpath 类路径中之后，您就可以通过 JDK 的 Java 编译器或任何其他编译器来编译 Servlet。</p>
+                <h2 id="RabbitMQ介绍"><a href="#RabbitMQ介绍" class="headerlink" title="RabbitMQ介绍"></a>RabbitMQ介绍</h2><p>RabbitMQ（Rabbit Message Queue）的简写，但不能仅仅理解其为消息队列，消息代理更合适。RabbitMQ 是一个由 <strong>Erlang</strong> 语言开发的AMQP（Advanced Message Queuing Protocol）（高级消息队列协议）的开源实现。</p>
+<p>支持多种客户端，如：<code>Python、Ruby、.NET、Java、JMS、C、PHP、ActionScript、XMPP、STOMP等，支持AJAX</code>,<strong>最重要的是也支持OC和swift</strong>。用于在分布式系统中存储转发消息，在易用性、扩展性、高可用性等方面表现不错。</p>
+<p>消息队列中间件是分布式系统中重要的组件，主要解决<strong>应用耦合</strong>，<strong>异步消息</strong>，<strong>流量削锋</strong>等问题。实现<strong>高性能</strong>，<strong>高可用</strong>，<strong>可伸缩</strong>和<strong>最终一致性</strong>架构。是大型分布式系统不可缺少的中间件。</p>
+<p>RabbitMQ提供了可靠的消息机制、跟踪机制和灵活的消息路由，支持消息集群和分布式部署。适用于排队算法、秒杀活动、消息分发、异步处理、数据同步、处理耗时任务、CQRS等应用场景。</p>
+<p>消息系统允许软件应用相互连接和扩展．这些应用可以相互链接起来组成一个更大的应用，或者将用户设备和数据进行连接．消息系统通过将消息的发送和接收分离来实现应用程序的异步和解偶。</p>
+<p>RabbitMQ是一个消息代理，一个消息系统的媒介。它可以为你的应用提供一个通用的消息发送和接收平台，并且保证消息再传输过程中的安全。</p>
+<p>RabbitMQ是一个消息代理。它的核心原理非常简单：接收和发送消息。你可以把它想像成一个邮局：你把信件放入邮箱，邮递员就会把信件投递到你的收件人处。在这个比喻中，RabbitMQ 就扮演着邮箱、邮局以及邮递员的角色。</p>
+<p>RabbitMQ和邮局的主要区别是，它不是用来处理纸张的，它是用来接收、存储和发送消息（message）这种二进制数据的。</p>
+<p>RabbitMQ的官网是<a href="http://www.rabbitmq.com" target="_blank" rel="noopener">http://www.rabbitmq.com</a></p>
+<h2 id="AMQP协议"><a href="#AMQP协议" class="headerlink" title="AMQP协议"></a>AMQP协议</h2><p><strong>AMQP</strong>，即<code>Advanced Message Queuing Protocol</code>，高级消息队列协议，是应用层协议的一个开放标准，为面向消息的中间件设计。消息中间件主要用于组件之间的解耦，消息的发送者无需知道消息使用者的存在，反之亦然。</p>
+<p>AMQP的主要特征是面向消息、队列、路由（包括点对点和发布/订阅）、可靠性、安全。</p>
 
             </div>
             <hr>
@@ -594,7 +568,7 @@
                     </span>
                     <a href="http://yoursite.com" class="b-link-green">小宇专属</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/02/01/Servlet系列/1.Servlet介绍/" class="b-link-green">一、Servlet介绍</a>
+                    <a href="/posts/27860/" class="b-link-green">一、RabbitMQ介绍</a>
                 </p>
             </div>
         </div>
@@ -616,7 +590,7 @@
         repo: 'qq943260285.github.io',
         owner: 'qq943260285',
         admin: "qq943260285",
-        id: '2019-02-01T00-00-00',
+        id: '2019-02-06T00-00-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -641,34 +615,31 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/02/02/Servlet系列/2.Servlet生命周期/">
+                <a href="/posts/40706/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="二、Servlet生命周期">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="一、SpringCloud介绍">
                         
-                        <span class="card-title">二、Servlet生命周期</span>
+                        <span class="card-title">一、SpringCloud介绍</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">Servlet生命周期Servlet 生命周期可被定义为从创建直到毁灭的整个过程。以下是 Servlet 遵循的过程：
-
-Servlet 通过调用 init () 方法进行初始化。
-Servlet 调用 service() 方法来处理客户端</div>
+                    <div class="summary">SpringCloud介绍Spring Cloud为开发人员提供了快速构建分布式系统中一些常见模式的工具（例如配置管理，服务发现，断路器，智能路由，微代理，控制总线，一次性令牌，全局锁定，领导选举，分布式会话，集群状态）。分布式系统间的协作</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-02
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-07
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Servlet/" class="post-category" target="_blank">
-                                    Servlet
+                            <a href="/categories/Java/" class="post-category" target="_blank">
+                                    Java
                                 </a>
                             
-                            <a href="/categories/Servlet/Java/" class="post-category" target="_blank">
-                                    Java
+                            <a href="/categories/Java/SpringCloud/" class="post-category" target="_blank">
+                                    SpringCloud
                                 </a>
                             
                             
@@ -678,12 +649,16 @@ Servlet 调用 service() 方法来处理客户端</div>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Servlet/" target="_blank">
-                        <span class="chip bg-color">Servlet</span>
+                    <a href="/tags/介绍/" target="_blank">
+                        <span class="chip bg-color">介绍</span>
                     </a>
                     
-                    <a href="/tags/Java基础/" target="_blank">
-                        <span class="chip bg-color">Java基础</span>
+                    <a href="/tags/Java/" target="_blank">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                    <a href="/tags/SpringCloud/" target="_blank">
+                        <span class="chip bg-color">SpringCloud</span>
                     </a>
                     
                 </div>
@@ -697,34 +672,27 @@ Servlet 调用 service() 方法来处理客户端</div>
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/01/01/博客文章模板/">
+                <a href="/posts/37830/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="博客文章模板">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="一、Redis介绍">
                         
-                        <span class="card-title">博客文章模板</span>
+                        <span class="card-title">一、Redis介绍</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">文章正文
-# 标题
-title: 博客文章模板
-# 时间
-date: 2019-01-01 00:00:00
-# 作者
-author: 小宇
-# 图片推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如:http://xxx.com/</div>
+                    <div class="summary"></div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-01
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-05
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/博客模板/" class="post-category" target="_blank">
-                                    博客模板
+                            <a href="/categories/Redis/" class="post-category" target="_blank">
+                                    Redis
                                 </a>
                             
                             
@@ -734,12 +702,12 @@ author: 小宇
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/标签/" target="_blank">
-                        <span class="chip bg-color">标签</span>
+                    <a href="/tags/Redis/" target="_blank">
+                        <span class="chip bg-color">Redis</span>
                     </a>
                     
-                    <a href="/tags/模板/" target="_blank">
-                        <span class="chip bg-color">模板</span>
+                    <a href="/tags/介绍/" target="_blank">
+                        <span class="chip bg-color">介绍</span>
                     </a>
                     
                 </div>

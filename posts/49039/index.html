@@ -4,15 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="博客文章模板, 小宇专属，学习，笔记，开发，全栈">
-    <meta name="description" content="文章正文
-# 标题
-title: 博客文章模板
-# 时间
-date: 2019-01-01 00:00:00
-# 作者
-author: 小宇
-# 图片推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如:http://xxx.com/">
+    <meta name="keywords" content="二、Servlet生命周期, 小宇专属，学习，笔记，开发，全栈">
+    <meta name="description" content="Servlet生命周期Servlet 生命周期可被定义为从创建直到毁灭的整个过程。以下是 Servlet 遵循的过程：
+
+Servlet 通过调用 init () 方法进行初始化。
+Servlet 调用 service() 方法来处理客户端">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +16,7 @@ author: 小宇
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>博客文章模板 | 小宇专属</title>
+    <title>二、Servlet生命周期 | 小宇专属</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -230,7 +226,7 @@ author: 小宇
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = 'f1ea3853bcaaa5b2ca5acbe98690cd92acb201e1cc67659c4dd783f8f99bc9c2';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -243,13 +239,13 @@ author: 小宇
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        博客文章模板
+                        二、Servlet生命周期
                     </div>
                 </div>
             </div>
@@ -362,12 +358,12 @@ author: 小宇
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/标签/" target="_blank">
-                                <span class="chip bg-color">标签</span>
+                            <a href="/tags/Servlet/" target="_blank">
+                                <span class="chip bg-color">Servlet</span>
                             </a>
                         
-                            <a href="/tags/模板/" target="_blank">
-                                <span class="chip bg-color">模板</span>
+                            <a href="/tags/Java基础/" target="_blank">
+                                <span class="chip bg-color">Java基础</span>
                             </a>
                         
                     </div>
@@ -378,8 +374,12 @@ author: 小宇
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/博客模板/" class="post-category" target="_blank">
-                                博客模板
+                            <a href="/categories/Servlet/" class="post-category" target="_blank">
+                                Servlet
+                            </a>
+                        
+                            <a href="/categories/Servlet/Java/" class="post-category" target="_blank">
+                                Java
                             </a>
                         
                     </div>
@@ -390,21 +390,21 @@ author: 小宇
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-01-01
+                    2019-02-02
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        212
+                        839
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        3 分
                     </div>
                     
                 
@@ -420,33 +420,59 @@ author: 小宇
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="文章正文"><a href="#文章正文" class="headerlink" title="文章正文"></a>文章正文</h1><pre class=" language-text"><code class="language-text">
-# 标题
-title: 博客文章模板
-# 时间
-date: 2019-01-01 00:00:00
-# 作者
-author: 小宇
-# 图片推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如:http://xxx.com/xxx.jpg
-img: /source/images/xxx.jpg
-# 如果top值为true，则会是首页推荐文章
-top: true
-# 如果要对文章设置阅读验证密码的话，就可以在设置password的值，该值必须是用SHA256加密后的密码，防止被他人识破
-password: 8d969eef6e1230c3f5d5a86aff3ca12020c923adc6c92
-# 本文章是否开启mathjax，且需要在主题的_config.yml文件中也需要开启才行
-mathjax: false
-# 摘要设置
-summary: 这是文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
-# 分类设置
-categories: Markdown
-# 标签设置
-tags:
-  - 标签
-  - Typora
-  - Markdown
-  - 模板
-
+                <h1 id="Servlet生命周期"><a href="#Servlet生命周期" class="headerlink" title="Servlet生命周期"></a>Servlet生命周期</h1><p>Servlet 生命周期可被定义为从创建直到毁灭的整个过程。以下是 Servlet 遵循的过程：</p>
+<ul>
+<li>Servlet 通过调用 <strong>init ()</strong> 方法进行初始化。</li>
+<li>Servlet 调用 <strong>service()</strong> 方法来处理客户端的请求。</li>
+<li>Servlet 通过调用 <strong>destroy()</strong> 方法终止（结束）。</li>
+<li>最后，Servlet 是由 JVM 的垃圾回收器进行垃圾回收的。</li>
+</ul>
+<p>现在让我们详细讨论生命周期的方法。</p>
+<h2 id="init-方法"><a href="#init-方法" class="headerlink" title="init() 方法"></a>init() 方法</h2><p>init 方法被设计成只调用一次。它在第一次创建 Servlet 时被调用，在后续每次用户请求时不再调用。因此，它是用于一次性初始化，就像 Applet 的 init 方法一样。</p>
+<p>Servlet 创建于用户第一次调用对应于该 Servlet 的 URL 时，但是您也可以指定 Servlet 在服务器第一次启动时被加载。</p>
+<p>当用户调用一个 Servlet 时，就会创建一个 Servlet 实例，每一个用户请求都会产生一个新的线程，适当的时候移交给 doGet 或 doPost 方法。init() 方法简单地创建或加载一些数据，这些数据将被用于 Servlet 的整个生命周期。</p>
+<p>init 方法的定义如下：</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> ServletException <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// 初始化代码...</span>
+<span class="token punctuation">}</span>
 </code></pre>
+<h2 id="service-方法"><a href="#service-方法" class="headerlink" title="service() 方法"></a>service() 方法</h2><p>service() 方法是执行实际任务的主要方法。Servlet 容器（即 Web 服务器）调用 service() 方法来处理来自客户端（浏览器）的请求，并把格式化的响应写回给客户端。</p>
+<p>每次服务器接收到一个 Servlet 请求时，服务器会产生一个新的线程并调用服务。service() 方法检查 HTTP 请求类型（GET、POST、PUT、DELETE 等），并在适当的时候调用 doGet、doPost、doPut，doDelete 等方法。</p>
+<p>下面是该方法的特征：</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">service</span><span class="token punctuation">(</span>ServletRequest request<span class="token punctuation">,</span> 
+                    ServletResponse response<span class="token punctuation">)</span> 
+      <span class="token keyword">throws</span> ServletException<span class="token punctuation">,</span> IOException<span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>service() 方法由容器调用，service 方法在适当的时候调用 doGet、doPost、doPut、doDelete 等方法。所以，您不用对 service() 方法做任何动作，您只需要根据来自客户端的请求类型来重写 doGet() 或 doPost() 即可。</p>
+<p>doGet() 和 doPost() 方法是每次服务请求中最常用的方法。下面是这两种方法的特征。</p>
+<h2 id="doGet-方法"><a href="#doGet-方法" class="headerlink" title="doGet() 方法"></a>doGet() 方法</h2><p>GET 请求来自于一个 URL 的正常请求，或者来自于一个未指定 METHOD 的 HTML 表单，它由 doGet() 方法处理。</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doGet</span><span class="token punctuation">(</span>HttpServletRequest request<span class="token punctuation">,</span>
+                  HttpServletResponse response<span class="token punctuation">)</span>
+    <span class="token keyword">throws</span> ServletException<span class="token punctuation">,</span> IOException <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// Servlet 代码</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="doPost-方法"><a href="#doPost-方法" class="headerlink" title="doPost() 方法"></a>doPost() 方法</h2><p>POST 请求来自于一个特别指定了 METHOD 为 POST 的 HTML 表单，它由 doPost() 方法处理。</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doPost</span><span class="token punctuation">(</span>HttpServletRequest request<span class="token punctuation">,</span>
+                   HttpServletResponse response<span class="token punctuation">)</span>
+    <span class="token keyword">throws</span> ServletException<span class="token punctuation">,</span> IOException <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// Servlet 代码</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="destroy-方法"><a href="#destroy-方法" class="headerlink" title="destroy() 方法"></a>destroy() 方法</h2><p>destroy() 方法只会被调用一次，在 Servlet 生命周期结束时被调用。destroy() 方法可以让您的 Servlet 关闭数据库连接、停止后台线程、把 Cookie 列表或点击计数器写入到磁盘，并执行其他类似的清理活动。</p>
+<p>在调用 destroy() 方法之后，servlet 对象被标记为垃圾回收。destroy 方法定义如下所示：</p>
+<pre class=" language-java"><code class="language-java">  <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">destroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 终止化代码...</span>
+  <span class="token punctuation">}</span>
+</code></pre>
+<h2 id="架构图"><a href="#架构图" class="headerlink" title="架构图"></a>架构图</h2><p>下图显示了一个典型的 Servlet 生命周期方案。</p>
+<ul>
+<li>第一个到达服务器的 HTTP 请求被委派到 Servlet 容器。</li>
+<li>Servlet 容器在调用 service() 方法之前加载 Servlet。</li>
+<li>然后 Servlet 容器处理由多个线程产生的多个请求，每个线程执行一个单一的 Servlet 实例的 service() 方法。</li>
+</ul>
+<p><img src="/posts/49039/assets/Servlet-LifeCycle-1553658939541.jpg" alt="Servlet 生命周期"></p>
 
             </div>
             <hr>
@@ -591,7 +617,7 @@ tags:
                     </span>
                     <a href="http://yoursite.com" class="b-link-green">小宇专属</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/01/01/博客文章模板/" class="b-link-green">博客文章模板</a>
+                    <a href="/posts/49039/" class="b-link-green">二、Servlet生命周期</a>
                 </p>
             </div>
         </div>
@@ -613,7 +639,7 @@ tags:
         repo: 'qq943260285.github.io',
         owner: 'qq943260285',
         admin: "qq943260285",
-        id: '2019-01-01T00-00-00',
+        id: '2019-02-02T00-00-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -638,7 +664,64 @@ tags:
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/02/01/Servlet系列/1.Servlet介绍/">
+                <a href="/posts/61680/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="一、SpringBoot介绍">
+                        
+                        <span class="card-title">一、SpringBoot介绍</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">SpringBoot介绍1、介绍Spring BootSpring Boot可以轻松地创建独立的、生产级的、基于Spring的应用程序。官方对Spring平台和第三方库进行了常用的习惯配置，这样可以轻松上手了。大多数Spring Boot应</div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-03
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category" target="_blank">
+                                    Java
+                                </a>
+                            
+                            <a href="/categories/Java/Spring-Boot/" class="post-category" target="_blank">
+                                    Spring Boot
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/介绍/" target="_blank">
+                        <span class="chip bg-color">介绍</span>
+                    </a>
+                    
+                    <a href="/tags/Spring-Boot/" target="_blank">
+                        <span class="chip bg-color">Spring Boot</span>
+                    </a>
+                    
+                    <a href="/tags/Java/" target="_blank">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/posts/59988/">
                     <div class="card-image">
                         
                         
@@ -650,9 +733,9 @@ tags:
                 <div class="card-content article-content">
                     <div class="summary">Servlet 简介Servlet 是一些遵从Java Servlet API的Java类，这些Java类可以响应请求。尽管Servlet可以响应任意类型的请求，但是它们使用最广泛的是响应web方面的请求。 Servlet必须部署在Java</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-01
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -676,73 +759,16 @@ tags:
                         <span class="chip bg-color">介绍</span>
                     </a>
                     
+                    <a href="/tags/Java/" target="_blank">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
                     <a href="/tags/Servlet/" target="_blank">
                         <span class="chip bg-color">Servlet</span>
                     </a>
                     
                     <a href="/tags/Java基础/" target="_blank">
                         <span class="chip bg-color">Java基础</span>
-                    </a>
-                    
-                    <a href="/tags/Java/" target="_blank">
-                        <span class="chip bg-color">Java</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/01/01/博客文章模板/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="博客文章模板">
-                        
-                        <span class="card-title">博客文章模板</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary">文章正文
-# 标题
-title: 博客文章模板
-# 时间
-date: 2019-01-01 00:00:00
-# 作者
-author: 小宇
-# 图片推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如:http://xxx.com/</div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-01
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/博客模板/" class="post-category" target="_blank">
-                                    博客模板
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/标签/" target="_blank">
-                        <span class="chip bg-color">标签</span>
-                    </a>
-                    
-                    <a href="/tags/模板/" target="_blank">
-                        <span class="chip bg-color">模板</span>
                     </a>
                     
                 </div>

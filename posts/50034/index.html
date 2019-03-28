@@ -4,8 +4,15 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="一、Redis介绍, 小宇专属，学习，笔记，开发，全栈">
-    <meta name="description" content="一、Redis介绍 | 小宇专属">
+    <meta name="keywords" content="博客文章模板, 小宇专属，学习，笔记，开发，全栈">
+    <meta name="description" content="文章正文
+# 标题
+title: 博客文章模板
+# 时间
+date: 2019-01-01 00:00:00
+# 作者
+author: 小宇
+# 图片推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如:http://xxx.com/">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>一、Redis介绍 | 小宇专属</title>
+    <title>博客文章模板 | 小宇专属</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -223,7 +230,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'f1ea3853bcaaa5b2ca5acbe98690cd92acb201e1cc67659c4dd783f8f99bc9c2';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -236,13 +243,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        一、Redis介绍
+                        博客文章模板
                     </div>
                 </div>
             </div>
@@ -355,12 +362,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/介绍/" target="_blank">
-                                <span class="chip bg-color">介绍</span>
+                            <a href="/tags/标签/" target="_blank">
+                                <span class="chip bg-color">标签</span>
                             </a>
                         
-                            <a href="/tags/Redis/" target="_blank">
-                                <span class="chip bg-color">Redis</span>
+                            <a href="/tags/模板/" target="_blank">
+                                <span class="chip bg-color">模板</span>
                             </a>
                         
                     </div>
@@ -371,8 +378,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Redis/" class="post-category" target="_blank">
-                                Redis
+                            <a href="/categories/博客模板/" class="post-category" target="_blank">
+                                博客模板
                             </a>
                         
                     </div>
@@ -383,14 +390,14 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-02-05
+                    2019-01-01
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        0
+                        212
                     </div>
                     
 
@@ -413,7 +420,34 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="文章正文"><a href="#文章正文" class="headerlink" title="文章正文"></a>文章正文</h1><pre class=" language-text"><code class="language-text">
+# 标题
+title: 博客文章模板
+# 时间
+date: 2019-01-01 00:00:00
+# 作者
+author: 小宇
+# 图片推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如:http://xxx.com/xxx.jpg
+img: /source/images/xxx.jpg
+# 如果top值为true，则会是首页推荐文章
+top: true
+# 如果要对文章设置阅读验证密码的话，就可以在设置password的值，该值必须是用SHA256加密后的密码，防止被他人识破
+password: 8d969eef6e1230c3f5d5a86aff3ca12020c923adc6c92
+# 本文章是否开启mathjax，且需要在主题的_config.yml文件中也需要开启才行
+mathjax: false
+# 摘要设置
+summary: 这是文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
+# 分类设置
+categories: Markdown
+# 标签设置
+tags:
+  - 标签
+  - Typora
+  - Markdown
+  - 模板
+
+</code></pre>
+
             </div>
             <hr>
 
@@ -557,7 +591,7 @@
                     </span>
                     <a href="http://yoursite.com" class="b-link-green">小宇专属</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/02/05/Redis系列/1.Redis介绍/" class="b-link-green">一、Redis介绍</a>
+                    <a href="/posts/50034/" class="b-link-green">博客文章模板</a>
                 </p>
             </div>
         </div>
@@ -579,7 +613,7 @@
         repo: 'qq943260285.github.io',
         owner: 'qq943260285',
         admin: "qq943260285",
-        id: '2019-02-05T00-00-00',
+        id: '2019-01-01T00-00-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -604,80 +638,31 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/02/06/RabbitMQ系列/1.RabbitMQ介绍/">
+                <a href="/posts/59988/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="一、RabbitMQ介绍">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="一、Servlet介绍">
                         
-                        <span class="card-title">一、RabbitMQ介绍</span>
+                        <span class="card-title">一、Servlet介绍</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">RabbitMQ介绍RabbitMQ（Rabbit Message Queue）的简写，但不能仅仅理解其为消息队列，消息代理更合适。RabbitMQ 是一个由 Erlang 语言开发的AMQP（Advanced Message Queuin</div>
+                    <div class="summary">Servlet 简介Servlet 是一些遵从Java Servlet API的Java类，这些Java类可以响应请求。尽管Servlet可以响应任意类型的请求，但是它们使用最广泛的是响应web方面的请求。 Servlet必须部署在Java</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-06
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-01
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/RabbitMQ/" class="post-category" target="_blank">
-                                    RabbitMQ
+                            <a href="/categories/Servlet/" class="post-category" target="_blank">
+                                    Servlet
                                 </a>
                             
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/RabbitMQ/" target="_blank">
-                        <span class="chip bg-color">RabbitMQ</span>
-                    </a>
-                    
-                    <a href="/tags/介绍/" target="_blank">
-                        <span class="chip bg-color">介绍</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/02/03/SpringBoot系列/1.SpringBoot介绍/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="一、SpringBoot介绍">
-                        
-                        <span class="card-title">一、SpringBoot介绍</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary">SpringBoot介绍1、介绍Spring BootSpring Boot可以轻松地创建独立的、生产级的、基于Spring的应用程序。官方对Spring平台和第三方库进行了常用的习惯配置，这样可以轻松上手了。大多数Spring Boot应</div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-03
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Java/" class="post-category" target="_blank">
+                            <a href="/categories/Servlet/Java/" class="post-category" target="_blank">
                                     Java
-                                </a>
-                            
-                            <a href="/categories/Java/Spring-Boot/" class="post-category" target="_blank">
-                                    Spring Boot
                                 </a>
                             
                             
@@ -695,8 +680,69 @@
                         <span class="chip bg-color">Java</span>
                     </a>
                     
-                    <a href="/tags/Spring-Boot/" target="_blank">
-                        <span class="chip bg-color">Spring Boot</span>
+                    <a href="/tags/Servlet/" target="_blank">
+                        <span class="chip bg-color">Servlet</span>
+                    </a>
+                    
+                    <a href="/tags/Java基础/" target="_blank">
+                        <span class="chip bg-color">Java基础</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
+            </div>
+            <div class="card">
+                <a href="/posts/50034/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="博客文章模板">
+                        
+                        <span class="card-title">博客文章模板</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">文章正文
+# 标题
+title: 博客文章模板
+# 时间
+date: 2019-01-01 00:00:00
+# 作者
+author: 小宇
+# 图片推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如:http://xxx.com/</div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/博客模板/" class="post-category" target="_blank">
+                                    博客模板
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/标签/" target="_blank">
+                        <span class="chip bg-color">标签</span>
+                    </a>
+                    
+                    <a href="/tags/模板/" target="_blank">
+                        <span class="chip bg-color">模板</span>
                     </a>
                     
                 </div>

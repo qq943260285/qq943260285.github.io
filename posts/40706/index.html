@@ -4,8 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="一、SpringBoot介绍, 小宇专属，学习，笔记，开发，全栈">
-    <meta name="description" content="SpringBoot介绍1、介绍Spring BootSpring Boot可以轻松地创建独立的、生产级的、基于Spring的应用程序。官方对Spring平台和第三方库进行了常用的习惯配置，这样可以轻松上手了。大多数Spring Boot应">
+    <meta name="keywords" content="一、SpringCloud介绍, 小宇专属，学习，笔记，开发，全栈">
+    <meta name="description" content="SpringCloud介绍Spring Cloud为开发人员提供了快速构建分布式系统中一些常见模式的工具（例如配置管理，服务发现，断路器，智能路由，微代理，控制总线，一次性令牌，全局锁定，领导选举，分布式会话，集群状态）。分布式系统间的协作">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>一、SpringBoot介绍 | 小宇专属</title>
+    <title>一、SpringCloud介绍 | 小宇专属</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -236,13 +236,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        一、SpringBoot介绍
+                        一、SpringCloud介绍
                     </div>
                 </div>
             </div>
@@ -363,8 +363,8 @@
                                 <span class="chip bg-color">Java</span>
                             </a>
                         
-                            <a href="/tags/Spring-Boot/" target="_blank">
-                                <span class="chip bg-color">Spring Boot</span>
+                            <a href="/tags/SpringCloud/" target="_blank">
+                                <span class="chip bg-color">SpringCloud</span>
                             </a>
                         
                     </div>
@@ -379,8 +379,8 @@
                                 Java
                             </a>
                         
-                            <a href="/categories/Java/Spring-Boot/" class="post-category" target="_blank">
-                                Spring Boot
+                            <a href="/categories/Java/SpringCloud/" class="post-category" target="_blank">
+                                SpringCloud
                             </a>
                         
                     </div>
@@ -391,21 +391,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-02-03
+                    2019-02-07
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        398
+                        1.2k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        4 分
                     </div>
                     
                 
@@ -421,79 +421,81 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="SpringBoot介绍"><a href="#SpringBoot介绍" class="headerlink" title="SpringBoot介绍"></a>SpringBoot介绍</h1><h2 id="1、介绍Spring-Boot"><a href="#1、介绍Spring-Boot" class="headerlink" title="1、介绍Spring Boot"></a>1、介绍Spring Boot</h2><p>Spring Boot可以轻松地创建独立的、生产级的、基于Spring的应用程序。官方对Spring平台和第三方库进行了常用的习惯配置，这样可以轻松上手了。大多数Spring Boot应用程序只需要很少的Spring配置。</p>
-<p>你可以使用Spring Boot创建基于 <code>java -jar</code> 或传统的war部署启动的Java应用程序 。</p>
-<p>Spring Boot的主要目标是：</p>
+                <h2 id="SpringCloud介绍"><a href="#SpringCloud介绍" class="headerlink" title="SpringCloud介绍"></a>SpringCloud介绍</h2><p>Spring Cloud为开发人员提供了快速构建分布式系统中一些常见模式的工具（例如配置管理，服务发现，断路器，智能路由，微代理，控制总线，一次性令牌，全局锁定，领导选举，分布式会话，集群状态）。分布式系统间的协作产生了一些样板性质的模式，开发者使用 Spring Cloud 就可以快速地构建基于这些模式的服务和应用。</p>
+<p>Spring Cloud是一系列框架的有序集合。它利用Spring Boot的开发便利性巧妙地简化了分布式系统/微服务基础设施的开发，如服务注册发现、配置中心、消息总线、负载均衡、断路器/熔断器、数据监控等，都可以用Spring Boot的开发风格做到一键启动和部署。Spring并没有重复制造轮子，它只是将目前各家公司开发的比较成熟、经得起实际考验的服务框架组合起来，通过Spring Boot风格进行再封装屏蔽掉了复杂的配置和实现原理，最终给开发者留出了一套简单易懂、易部署和易维护的分布式系统/微服务开发工具包。</p>
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><p>Spring Cloud专注于提供良好的开箱即用经验的典型用例和可扩展性机制覆盖。</p>
 <ul>
-<li>为Spring开发者提供更快且可广泛访问的入门体验。</li>
-<li>开箱即用，提供各种默认配置来简化项目配置。</li>
-<li>提供大型项目（例如嵌入式服务器，安全性，度量标准，运行状况检查和外部化配置）通用的一系列非功能性功能。</li>
-<li>没有冗余代码生成，也不需要XML配置。</li>
+<li>分布式/版本化配置</li>
+<li>服务注册和发现</li>
+<li>路由</li>
+<li>service - to - service调用</li>
+<li>负载均衡</li>
+<li>断路器</li>
+<li>分布式消息传递</li>
 </ul>
-<h2 id="2、系统要求"><a href="#2、系统要求" class="headerlink" title="2、系统要求"></a>2、系统要求</h2><p><strong>Spring Boot 2.1.3.RELEASE</strong>需要Java 8并且与Java 11兼容（包括在内）。 还需要Spring Framework 5.1.5.RELEASE或更高版本。</p>
-<p>为以下构建工具提供了显式构建支持：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">构建工具</th>
-<th style="text-align:left">版本</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Maven</td>
-<td style="text-align:left">3.3+</td>
-</tr>
-<tr>
-<td style="text-align:left">Gradle</td>
-<td style="text-align:left">4.4+</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Spring Boot 2.2.0.BUILD-SNAPSHOT</strong> 需要Java 8并且与Java 11兼容（包括在内）。 还需要Spring Framework 5.2.0.BUILD-SNAPSHOT或更高版本。</p>
-<p>为以下构建工具提供了显式构建支持：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">构建工具</th>
-<th style="text-align:left">版本</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Maven</td>
-<td style="text-align:left">3.3+</td>
-</tr>
-<tr>
-<td style="text-align:left">Gradle</td>
-<td style="text-align:left">4.4+</td>
-</tr>
-</tbody>
-</table>
-<h3 id="2-1、Servlet容器"><a href="#2-1、Servlet容器" class="headerlink" title="2.1、Servlet容器"></a>2.1、Servlet容器</h3><p>Spring Boot支持以下嵌入式servlet容器：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">名称</th>
-<th style="text-align:left">Servlet版本</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Tomcat 9.0</td>
-<td style="text-align:left">4.0</td>
-</tr>
-<tr>
-<td style="text-align:left">Jetty 9.4</td>
-<td style="text-align:left">3.1</td>
-</tr>
-<tr>
-<td style="text-align:left">Undertow 2.0</td>
-<td style="text-align:left">4.0</td>
-</tr>
-</tbody>
-</table>
-<p>您还可以将Spring Boot应用程序部署到任何Servlet 3.1+兼容容器。</p>
+<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><h3 id="Spring-Cloud-Config"><a href="#Spring-Cloud-Config" class="headerlink" title="Spring Cloud Config"></a><a href="https://springcloud.cc/spring-cloud-config.html" target="_blank" rel="noopener">Spring Cloud Config</a></h3><p>开发：Spring</p>
+<p><img src="/posts/40706/../1.SpringCloud介绍/spring-cloud-config.png" alt="Spring Cloud Config"></p>
+<p>配置管理工具包，让你可以把配置放到远程服务器，集中化管理集群配置，目前支持本地存储、Git以及Subversion。</p>
+<h3 id="Spring-Cloud-Bus"><a href="#Spring-Cloud-Bus" class="headerlink" title="Spring Cloud Bus"></a><a href="https://springcloud.cc/spring-cloud-bus.html" target="_blank" rel="noopener">Spring Cloud Bus</a></h3><p>开发：Spring</p>
+<p><img src="/posts/40706/./1.SpringCloud介绍/spring-cloud-bus.png" alt="Spring Cloud Bus"></p>
+<p>事件、消息总线，用于在集群（例如，配置变化事件）中传播状态变化，可与Spring Cloud Config联合实现热部署。</p>
+<h3 id="Eureka"><a href="#Eureka" class="headerlink" title="Eureka"></a><a href="https://github.com/Netflix/eureka" target="_blank" rel="noopener">Eureka</a></h3><p>开发：Netflix</p>
+<p><img src="/posts/40706/1.SpringCloud介绍/netflix-eureka.jpg" alt="Eureka"></p>
+<p>云端服务发现，一个基于 REST 的服务，用于定位服务，以实现云端中间层服务发现和故障转移。</p>
+<h3 id="Hystrix"><a href="#Hystrix" class="headerlink" title="Hystrix"></a><a href="https://github.com/Netflix/hystrix" target="_blank" rel="noopener">Hystrix</a></h3><p>开发：Netflix</p>
+<p><img src="/posts/40706/1.SpringCloud介绍/netflix-hystrix.png" alt="Hystrix"></p>
+<p>熔断器，容错管理工具，旨在通过熔断机制控制服务和第三方库的节点,从而对延迟和故障提供更强大的容错能力。</p>
+<h3 id="Zuul"><a href="#Zuul" class="headerlink" title="Zuul"></a><a href="https://github.com/Netflix/zuul" target="_blank" rel="noopener">Zuul</a></h3><p>开发：Netflix</p>
+<p><img src="/posts/40706/1.SpringCloud介绍/netflix-zuul.png" alt="Zuul"></p>
+<p>Zuul 是在云平台上提供动态路由,监控,弹性,安全等边缘服务的框架。Zuul 相当于是设备和 Netflix 流应用的 Web 网站后端所有请求的前门。</p>
+<h3 id="Archaius"><a href="#Archaius" class="headerlink" title="Archaius"></a><a href="https://github.com/Netflix/archaius" target="_blank" rel="noopener">Archaius</a></h3><p>开发：Netflix</p>
+<p><img src="/posts/40706/1.SpringCloud介绍/netflix-archaius.png" alt="Archaius"></p>
+<p>配置管理API，包含一系列配置管理API，提供动态类型化属性、线程安全配置操作、轮询框架、回调机制等功能。</p>
+<h3 id="Consul"><a href="#Consul" class="headerlink" title="Consul"></a><a href="https://github.com/HashiCorp/consul" target="_blank" rel="noopener">Consul</a></h3><p>开发：HashiCorp</p>
+<p><img src="/posts/40706/1.SpringCloud介绍/hashicorp-consul.png" alt="Consul"></p>
+<p>封装了Consul操作，consul是一个服务发现与配置工具，与Docker容器可以无缝集成。</p>
+<h3 id="Spring-Cloud-for-Cloud-Foundry"><a href="#Spring-Cloud-for-Cloud-Foundry" class="headerlink" title="Spring Cloud for Cloud Foundry"></a><a href="https://github.com/spring-cloud/spring-cloud-cloudfoundry" target="_blank" rel="noopener">Spring Cloud for Cloud Foundry</a></h3><p>开发：Pivotal</p>
+<p><img src="/posts/40706/1.SpringCloud介绍/pivotal-cloud-foundry.png" alt="Spring Cloud for Cloud Foundry"></p>
+<p>通过Oauth2协议绑定服务到CloudFoundry，CloudFoundry是VMware推出的开源PaaS云平台。</p>
+<h3 id="Spring-Cloud-Sleuth"><a href="#Spring-Cloud-Sleuth" class="headerlink" title="Spring Cloud Sleuth"></a><a href="https://github.com/spring-cloud/spring-cloud-sleuth" target="_blank" rel="noopener">Spring Cloud Sleuth</a></h3><p>开发：Spring</p>
+<p><img src="/posts/40706/1.SpringCloud介绍/spring-cloud-sleuth.png" alt="Spring Cloud Sleuth"></p>
+<p>日志收集工具包，封装了Dapper和log-based追踪以及Zipkin和HTrace操作，为SpringCloud应用实现了一种分布式追踪解决方案。</p>
+<h3 id="Spring-Cloud-Data-Flow"><a href="#Spring-Cloud-Data-Flow" class="headerlink" title="Spring Cloud Data Flow"></a><a href="https://springcloud.cc/spring-cloud-dataflow.html" target="_blank" rel="noopener">Spring Cloud Data Flow</a></h3><p>开发：Pivotal</p>
+<p><img src="/posts/40706/1.SpringCloud介绍/spring-cloud-data-flow.png" alt="Spring Cloud Data Flow"></p>
+<p>大数据操作工具，作为Spring XD的替代产品，它是一个混合计算模型，结合了流数据与批量数据的处理方式。</p>
+<h3 id="Spring-Cloud-Security"><a href="#Spring-Cloud-Security" class="headerlink" title="Spring Cloud Security"></a><a href="https://github.com/spring-cloud/spring-cloud-security" target="_blank" rel="noopener">Spring Cloud Security</a></h3><p>开发：Spring</p>
+<p><img src="1.SpringCloud介绍//spring-cloud-security.png" alt="Spring Cloud Security"></p>
+<p>基于spring security的安全工具包，为你的应用程序添加安全控制。</p>
+<h3 id="Spring-Cloud-Zookeeper"><a href="#Spring-Cloud-Zookeeper" class="headerlink" title="Spring Cloud Zookeeper"></a><a href="https://github.com/spring-cloud/spring-cloud-zookeeper" target="_blank" rel="noopener">Spring Cloud Zookeeper</a></h3><p>开发：Spring</p>
+<p><img src="/posts/40706/1.SpringCloud介绍/spring-cloud-zookeeper.png" alt="Spring Cloud Zookeeper"></p>
+<p>操作Zookeeper的工具包，用于使用zookeeper方式的服务发现和配置管理。</p>
+<h3 id="Spring-Cloud-Stream"><a href="#Spring-Cloud-Stream" class="headerlink" title="Spring Cloud Stream"></a><a href="https://github.com/spring-cloud/spring-cloud-stream" target="_blank" rel="noopener">Spring Cloud Stream</a></h3><p>开发：Spring</p>
+<p><img src="/posts/40706/1.SpringCloud介绍/spring-cloud-stream.png" alt="Spring Cloud Stream"></p>
+<p>数据流操作开发包，封装了与Redis,Rabbit、Kafka等发送接收消息。</p>
+<h3 id="Spring-Cloud-CLI"><a href="#Spring-Cloud-CLI" class="headerlink" title="Spring Cloud CLI"></a><a href="https://springcloud.cc/spring-cloud-cli.html" target="_blank" rel="noopener">Spring Cloud CLI</a></h3><p>开发：Spring</p>
+<p><img src="/posts/40706/1.SpringCloud介绍/spring-cloud-cli.png" alt="Spring Cloud CLI"></p>
+<p>基于 Spring Boot CLI，可以让你以命令行方式快速建立云组件。</p>
+<h3 id="Ribbon"><a href="#Ribbon" class="headerlink" title="Ribbon"></a><a href="https://github.com/Netflix/ribbon" target="_blank" rel="noopener">Ribbon</a></h3><p>开发：Netflix</p>
+<p><img src="/posts/40706/1.SpringCloud介绍/netflix-ribbon.png" alt="Ribbon"></p>
+<p>提供云端负载均衡，有多种负载均衡策略可供选择，可配合服务发现和断路器使用。</p>
+<h3 id="Turbine"><a href="#Turbine" class="headerlink" title="Turbine"></a><a href="https://github.com/Netflix/turbine" target="_blank" rel="noopener">Turbine</a></h3><p>开发：Netflix</p>
+<p><img src="/posts/40706/1.SpringCloud介绍/netflix-turbine.png" alt="Turbine"></p>
+<p>Turbine是聚合服务器发送事件流数据的一个工具，用来监控集群下hystrix的metrics情况。</p>
+<h3 id="Feign"><a href="#Feign" class="headerlink" title="Feign"></a><a href="https://github.com/OpenFeign/feign" target="_blank" rel="noopener">Feign</a></h3><p>开发：OpenFeign</p>
+<p><img src="/posts/40706/1.SpringCloud介绍/netflix-feign.png" alt="Feign"></p>
+<p>Feign是一种声明式、模板化的HTTP客户端。</p>
+<h3 id="Spring-Cloud-Task"><a href="#Spring-Cloud-Task" class="headerlink" title="Spring Cloud Task"></a><a href="https://github.com/spring-cloud/spring-cloud-task" target="_blank" rel="noopener">Spring Cloud Task</a></h3><p>开发：Spring</p>
+<p><img src="/posts/40706/1.SpringCloud介绍/spring-cloud-task.png" alt="Spring Cloud Task"></p>
+<p>提供云端计划任务管理、任务调度。</p>
+<h3 id="Spring-Cloud-Connectors"><a href="#Spring-Cloud-Connectors" class="headerlink" title="Spring Cloud Connectors"></a><a href="https://springcloud.cc/spring-cloud-connectors.html" target="_blank" rel="noopener">Spring Cloud Connectors</a></h3><p>开发：Spring</p>
+<p><img src="/posts/40706/1.SpringCloud介绍/spring-cloud-connectors.png" alt="Spring Cloud Connectors"></p>
+<p>便于云端应用程序在各种PaaS平台连接到后端，如：数据库和消息代理服务。</p>
+<h3 id="Spring-Cloud-Cluster"><a href="#Spring-Cloud-Cluster" class="headerlink" title="Spring Cloud Cluster"></a><a href="https://github.com/spring-cloud/spring-cloud-cluster" target="_blank" rel="noopener">Spring Cloud Cluster</a></h3><p>开发：Spring</p>
+<p><img src="/posts/40706/1.SpringCloud介绍/spring-cloud-cluster.png" alt="Spring Cloud Cluster"></p>
+<p>提供Leadership选举，如：Zookeeper, Redis, Hazelcast, Consul等常见状态模式的抽象和实现。</p>
+<h3 id="Spring-Cloud-Starters"><a href="#Spring-Cloud-Starters" class="headerlink" title="Spring Cloud Starters"></a><a href="https://github.com/spring-cloud/spring-cloud-stream-starters" target="_blank" rel="noopener">Spring Cloud Starters</a></h3><p>开发：Pivotal</p>
+<p><img src="/posts/40706/1.SpringCloud介绍/spring-cloud-starters.png" alt="Spring Cloud Starters"></p>
+<p>Spring Boot式的启动项目，为Spring Cloud提供开箱即用的依赖管理。</p>
 
             </div>
             <hr>
@@ -638,7 +640,7 @@
                     </span>
                     <a href="http://yoursite.com" class="b-link-green">小宇专属</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/02/03/SpringBoot系列/1.SpringBoot介绍/" class="b-link-green">一、SpringBoot介绍</a>
+                    <a href="/posts/40706/" class="b-link-green">一、SpringCloud介绍</a>
                 </p>
             </div>
         </div>
@@ -660,7 +662,7 @@
         repo: 'qq943260285.github.io',
         owner: 'qq943260285',
         admin: "qq943260285",
-        id: '2019-02-03T00-00-00',
+        id: '2019-02-07T00-00-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -683,35 +685,41 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/02/05/Redis系列/1.Redis介绍/">
+                <a href="/posts/40706/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="一、Redis介绍">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="一、SpringCloud介绍">
                         
-                        <span class="card-title">一、Redis介绍</span>
+                        <span class="card-title">一、SpringCloud介绍</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary"></div>
+                    <div class="summary">SpringCloud介绍Spring Cloud为开发人员提供了快速构建分布式系统中一些常见模式的工具（例如配置管理，服务发现，断路器，智能路由，微代理，控制总线，一次性令牌，全局锁定，领导选举，分布式会话，集群状态）。分布式系统间的协作</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-07
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Redis/" class="post-category" target="_blank">
-                                    Redis
+                            <a href="/categories/Java/" class="post-category" target="_blank">
+                                    Java
+                                </a>
+                            
+                            <a href="/categories/Java/SpringCloud/" class="post-category" target="_blank">
+                                    SpringCloud
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -719,8 +727,12 @@
                         <span class="chip bg-color">介绍</span>
                     </a>
                     
-                    <a href="/tags/Redis/" target="_blank">
-                        <span class="chip bg-color">Redis</span>
+                    <a href="/tags/Java/" target="_blank">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                    <a href="/tags/SpringCloud/" target="_blank">
+                        <span class="chip bg-color">SpringCloud</span>
                     </a>
                     
                 </div>
@@ -734,34 +746,27 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/02/02/Servlet系列/2.Servlet生命周期/">
+                <a href="/posts/27860/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="二、Servlet生命周期">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="一、RabbitMQ介绍">
                         
-                        <span class="card-title">二、Servlet生命周期</span>
+                        <span class="card-title">一、RabbitMQ介绍</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">Servlet生命周期Servlet 生命周期可被定义为从创建直到毁灭的整个过程。以下是 Servlet 遵循的过程：
-
-Servlet 通过调用 init () 方法进行初始化。
-Servlet 调用 service() 方法来处理客户端</div>
+                    <div class="summary">RabbitMQ介绍RabbitMQ（Rabbit Message Queue）的简写，但不能仅仅理解其为消息队列，消息代理更合适。RabbitMQ 是一个由 Erlang 语言开发的AMQP（Advanced Message Queuin</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-02
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-06
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Servlet/" class="post-category" target="_blank">
-                                    Servlet
-                                </a>
-                            
-                            <a href="/categories/Servlet/Java/" class="post-category" target="_blank">
-                                    Java
+                            <a href="/categories/RabbitMQ/" class="post-category" target="_blank">
+                                    RabbitMQ
                                 </a>
                             
                             
@@ -771,12 +776,12 @@ Servlet 调用 service() 方法来处理客户端</div>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Servlet/" target="_blank">
-                        <span class="chip bg-color">Servlet</span>
+                    <a href="/tags/介绍/" target="_blank">
+                        <span class="chip bg-color">介绍</span>
                     </a>
                     
-                    <a href="/tags/Java基础/" target="_blank">
-                        <span class="chip bg-color">Java基础</span>
+                    <a href="/tags/RabbitMQ/" target="_blank">
+                        <span class="chip bg-color">RabbitMQ</span>
                     </a>
                     
                 </div>
