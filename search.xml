@@ -51,9 +51,9 @@
       
         <tags>
             
-            <tag> RabbitMQ </tag>
-            
             <tag> 介绍 </tag>
+            
+            <tag> RabbitMQ </tag>
             
         </tags>
       
@@ -78,9 +78,9 @@
       
         <tags>
             
-            <tag> 介绍 </tag>
-            
             <tag> Redis </tag>
+            
+            <tag> 介绍 </tag>
             
         </tags>
       
@@ -167,11 +167,11 @@
       
         <tags>
             
-            <tag> 介绍 </tag>
-            
             <tag> Servlet </tag>
             
             <tag> Java基础 </tag>
+            
+            <tag> 介绍 </tag>
             
             <tag> Java </tag>
             
